@@ -29,6 +29,13 @@ let config = {
 		]
 	},
 
+	devServer: {
+		contentBase: path.join(__dirname),
+		compress: true,
+		port: 9000,
+		open: true
+	},
+
 	resolve: {
 		extensions: ['.js', '.jsx']
 	},
