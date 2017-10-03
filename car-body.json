@@ -1,0 +1,56 @@
+[
+	{
+		"id": 1,
+		"name": "Coupe",
+		"isRecommended": false,
+		"count": 91,
+		"lineIcon": "",
+		"icon": "https://cdn4.iconfinder.com/data/icons/car-silhouettes/1000/city-car-128.png",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae velit malesuada."
+	},
+	{
+		"id": 2,
+		"name": "Sedan",
+		"isRecommended": true,
+		"count": 87,
+		"lineIcon": "",
+		"icon": "https://cdn4.iconfinder.com/data/icons/car-silhouettes/1000/sedan-128.png",
+		"description": "Aliquam erat volutpat. Nam non leo ullamcorper, elementum augue nec, viverra orci."
+	},
+	{
+		"id": 3,
+		"name": "Wagon",
+		"isRecommended": false,
+		"count": 97,
+		"lineIcon": "",
+		"icon": "https://cdn4.iconfinder.com/data/icons/car-silhouettes/1000/minivan-128.png",
+		"description": "Cras dolor felis, scelerisque nec fermentum eget, iaculis id nibh. Vestibulum aliquam sed nisi ut luctus."
+	},
+	{
+		"id": 4,
+		"name": "SUV",
+		"isRecommended": true,
+		"count": 74,
+		"lineIcon": "",
+		"icon": "https://cdn4.iconfinder.com/data/icons/car-silhouettes/1000/SUV-128.png",
+		"description": "Proin molestie orci nec nisi vulputate molestie. Vivamus ultrices sollicitudin quam, et dictum mi interdum et."
+	},
+	{
+		"id": 5,
+		"name": "Convertable",
+		"isRecommended": false,
+		"count": 82,
+		"lineIcon": "",
+		"icon": "https://cdn4.iconfinder.com/data/icons/car-silhouettes/1000/cabriolet-128.png",
+		"description": "Duis vitae urna et arcu fringilla tempus sit amet et nisi. Donec commodo felis a tincidunt pellentesque."
+	},
+	{
+		"id": 6,
+		"name": "Pickup",
+		"isRecommended": false,
+		"count": 77,
+		"lineIcon": "",
+		"icon": "https://cdn4.iconfinder.com/data/icons/car-silhouettes/1000/minivan-128.png",
+		"description": "Ut sem libero, consectetur ut mattis elementum, euismod at enim."
+	}
+]

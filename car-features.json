@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"name": "Automatic Transmission",
+		"icon": "https://cdn4.iconfinder.com/data/icons/48-bubbles/48/18.Pictures-Day-48.png",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat."
+	},
+	{
+		"id": 2,
+		"name": "ABS",
+		"icon": "https://cdn4.iconfinder.com/data/icons/48-bubbles/48/18.Pictures-Day-48.png",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat."
+	},
+	{
+		"id": 3,
+		"name": "Airbags",
+		"icon": "https://cdn4.iconfinder.com/data/icons/48-bubbles/48/18.Pictures-Day-48.png",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat."
+	},
+	{
+		"id": 4,
+		"name": "Central Locking",
+		"icon": "https://cdn4.iconfinder.com/data/icons/48-bubbles/48/18.Pictures-Day-48.png",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat."
+	}
+]

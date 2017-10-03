@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"name": "Petrol",
+		"icon": "https://cdn2.iconfinder.com/data/icons/car-parts-11/256/Fuel-64.png",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+	},
+	{
+		"id": 2,
+		"name": "Diesel",
+		"icon": "https://cdn2.iconfinder.com/data/icons/car-parts-11/256/Fuel-64.png",
+		"description": "Aliquam erat volutpat. Nam non leo ullamcorper."
+	},
+	{
+		"id": 3,
+		"name": "CNG",
+		"icon": "https://cdn2.iconfinder.com/data/icons/car-parts-11/256/Fuel-64.png",
+		"description": "Cras dolor felis, scelerisque nec fermentum eget."
+	},
+	{
+		"id": 4,
+		"name": "Electric",
+		"icon": "https://cdn2.iconfinder.com/data/icons/car-parts-11/256/Fuel-64.png",
+		"description": "Proin molestie orci nec nisi vulputate molestie."
+	}
+]
