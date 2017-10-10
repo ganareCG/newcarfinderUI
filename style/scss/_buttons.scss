@@ -1,0 +1,197 @@
+//
+// Buttons
+// --------------------------------------------------
+
+
+// Base styles
+// --------------------------------------------------
+
+.cw-btn {
+  font-family: $lato;
+  display: inline-block;
+  margin-bottom: 0; // For input.btn
+  font-weight: $button-font-weight;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent;
+  white-space: nowrap;
+  
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      @include tab-focus;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: $btn-default-color;
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: $cursor-disabled;
+  }
+
+  // [converter] extracted a& to a.btn
+}
+
+a.cw-btn {
+  &.disabled,
+  fieldset[disabled] & {
+    pointer-events: none; // Future-proof disabling of clicks on `<a>` elements
+  }
+}
+
+
+// Alternate buttons
+// --------------------------------------------------
+
+.cw-btn-default {
+  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+  &.disabled,
+  fieldset[disabled] & {
+    pointer-events: none; // Future-proof disabling of clicks on `<a>` elements
+    opacity: 0.5;
+  }
+}
+.cw-btn-secondary {
+  @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
+  background-color: transparent;
+  &.disabled,
+  fieldset[disabled] & {
+    pointer-events: none; // Future-proof disabling of clicks on `<a>` elements
+    opacity: 0.5;
+  }
+    &:hover, &:active, &.active  {
+        color: white !important;
+    }
+}
+
+.cw-btn-white {
+  @include button-variant(white, transparent, white);
+  &.disabled,
+  fieldset[disabled] & {
+    pointer-events: none; // Future-proof disabling of clicks on `<a>` elements
+    opacity: 0.5;
+  }
+}
+
+// .cw-btn-primary {
+//   @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+// }
+// // Success appears as green
+// .cw-btn-success {
+//   @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+// }
+// // Info appears as blue-green
+// .cw-btn-info {
+//   @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+// }
+// // Warning appears as orange
+// .cw-btn-warning {
+//   @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+// }
+// // Danger and error appear as red
+// .cw-btn-danger {
+//   @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+// }
+
+
+// Link buttons
+// -------------------------
+
+// Make a button look and behave like a link
+.cw-btn-link {
+  color: $link-color;
+  font-weight: normal;
+  border-radius: 0;
+
+  &,
+  &:active,
+  &.active,
+  &[disabled],
+  fieldset[disabled] & {
+    background-color: transparent;
+  }
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
+  &:hover,
+  &:focus {
+    color: #23EFAB;
+    //text-decoration: $link-hover-decoration;
+    background-color: transparent;
+  }
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus {
+      //color: $btn-link-disabled-color;
+      text-decoration: none;
+    }
+  }
+}
+
+
+// Button Sizes
+// --------------------------------------------------
+
+.cw-btn-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  @include button-size(13px, 18px, 22px, 6px, 310px);
+  margin-bottom: 10px;
+}
+
+.cw-btn-md {
+  // line-height: ensure even-numbered height of button next to large input
+  //button-size($padding-vertical, $font-size, $line-height, $border-radius, $width)
+  @include button-size(13px, 15px, 20px, 6px, 250px);
+  margin-bottom: 10px;
+}
+
+.cw-btn-sm {
+  // line-height: ensure even-numbered height of button next to large input
+  //button-size($padding-vertical, $font-size, $line-height, $border-radius, $width)
+  @include button-size(9px, 12px, 15px, 4px, 180px);
+  margin-bottom: 10px;
+}
+
+// Block button
+// --------------------------------------------------
+
+.cw-btn-block {
+  display: block;
+  width: 100%;
+}
+
+// Vertically space out multiple block buttons
+.cw-btn-block + .cw-btn-block {
+  margin-top: 5px;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.cw-btn-block {
+    width: 100%;
+  }
+}

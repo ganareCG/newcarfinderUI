@@ -1,3 +1,5 @@
+import styles from '../../style/main.scss';
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
@@ -14,8 +16,12 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
-				<Link to="/find-car">Find Car</Link>
-				<Main />
+				<div className="header-wrapper">
+					<Link className="cw-btn-link" to="/find-car">Find Car</Link>
+				</div>
+				<div className="content-wrapper">
+					<Main />
+				</div>
 			</div>
 		)
 	}

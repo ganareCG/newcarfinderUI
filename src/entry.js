@@ -24,7 +24,9 @@ const store = createStore(
 render(
 	<Provider store={store}>
 		<BrowserRouter>
+		<div className="m-container">
 			<App />
+		</div>
 		</BrowserRouter>
 	</Provider>,
 	document.getElementById('root')

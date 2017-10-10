@@ -1,0 +1,89 @@
+/*
+10px = 0.625rem
+11px = 0.688rem
+12px = 0.75rem
+13px = 0.8125rem
+14px = 0.875rem
+15px = 0.9375rem
+16px = 1rem (base)
+18px = 1.125rem
+20px = 1.25rem
+*/
+
+// Colors
+// ==========================================================================
+$success-color: color("carwale-secondary-teal", "spring-green") !default;
+$error-color: color("carwale-secondary-orange", "cinnabar") !default;
+$link-color: color("carwale-secondary-blue", "lynch") !default;
+
+$lightgrey: color("carwale-grey", "light-gray") !default;
+
+// Header Styles
+$h1-fontsize: 1.25rem !default;
+$h2-fontsize: 1.125rem !default;
+$h3-fontsize: 1rem !default;
+$h4-fontsize: 0.9375rem !default;
+$h5-fontsize: 0.8125rem !default;
+
+// Media Query Ranges
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$extra-large-and-up: "only screen and (min-width : #{$large-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+
+// Buttons
+// ==========================================================================
+$btn-default-color: #ffffff;
+$btn-default-bg: #e53012;
+$btn-default-border: #e53012;
+
+$btn-secondary-color: color(carwale-secondary-teal, shamrock-green);
+$btn-secondary-bg: color(carwale-secondary-teal, shamrock-green);
+$btn-secondary-border: color(carwale-secondary-teal, shamrock-green);
+
+//** Disabled cursor for form controls and buttons.
+$cursor-disabled:                not-allowed !default;
+
+
+// Shared styles
+$button-border: none !default;
+$button-font-size: 1.125rem !default;
+$button-font-weight: bold !default;
+$button-icon-font-size: 1.3rem !default;
+$button-height: 48px !default;
+$button-padding: 0 2rem !default;
+$button-radius: 2px !default;
+
+// Disabled styles
+$button-disabled-background: #DFDFDF !default;
+$button-disabled-color: #9F9F9F !default;
+
+// Raised buttons
+// $button-raised-background: $secondary-color !default;
+$button-raised-background-hover: lighten(red, 5%) !default;
+$button-raised-color: #fff !default;
+
+// Large buttons
+$button-large-icon-font-size: 1.6rem !default;
+$button-large-height: $button-height * 1.5 !default;
+
+// Flat buttons
+$button-flat-color: #343434 !default;
+$button-flat-disabled-color: lighten(#999, 10%) !default;
+
+// Floating buttons
+// $button-floating-background: $secondary-color !default;
+$button-floating-background-hover: yellow !default;
+$button-floating-color: #fff !default;
+$button-floating-size: 40px !default;
+$button-floating-large-size: 56px !default;
+$button-floating-radius: 50% !default;

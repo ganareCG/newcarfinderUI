@@ -1,0 +1,13 @@
+.other-default {
+    width: 140px;
+    height: 40px;
+    border-radius: 23px;
+    background: transparent;
+    border: solid 1px #00afa0;
+    color: #00afa0;
+    &:hover, &.active, &.focus, &:focus, &:active {
+        background-color: #00afa0;
+        color: white;
+        outline: none;
+    }
+}

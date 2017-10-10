@@ -1,0 +1,103 @@
+$carwale-primary-blue: (
+  "blue-whale":       #0B2E40,
+  "green-vogue":    #0E3A50,
+);
+
+$carwale-primary-orange: (
+  "hd-orange":       #BF331C,
+  "orange-red":    #E53012,
+);
+
+$carwale-secondary-teal: (
+  "shamrock-green":       #00AFA0,
+  "spring-green":    #23EFAB,
+);
+
+$carwale-secondary-brown: (
+  "golden-brown":       #A25A00,
+  "carrot-orange":    #EF9423,
+);
+
+$carwale-secondary-orange: (
+  "orange":       #ef4b23,
+  "cinnabar":    #ff653f,
+);
+
+$carwale-secondary-blue: (
+  "summer-sky":       #65818f,
+  "lynch":    #3fbfff,
+);
+
+$carwale-grey: (
+  "base":       #000000,
+  "charcoal":   #484848,
+  "dim-gray":   #6f6f6f,
+  "dark-gray":   #aaaaaa,
+  "light-gray":   #d5d5d5,
+  "white-smoke":   #efefef,
+  "snow":   #fbfbfb,
+);
+
+$shades: (
+  "black":        #000000,
+  "white":        #FFFFFF,
+  "transparent":  transparent
+);
+
+$colors: (
+  "carwale-primary-blue": $carwale-primary-blue,
+  "carwale-primary-orange": $carwale-primary-orange,
+  "carwale-secondary-teal": $carwale-secondary-teal,
+  "carwale-secondary-brown": $carwale-secondary-brown,
+  "carwale-secondary-orange": $carwale-secondary-orange,
+  "carwale-secondary-blue": $carwale-secondary-blue,
+  "carwale-grey": $carwale-grey,
+  "shades": $shades,
+) !default;
+
+// Color Classes
+
+@each $color_name, $color in $colors {
+  @each $color_type, $color_value in $color {
+    @if $color_type == "base" {
+      .#{$color_name} {
+        background-color: $color_value !important;
+      }
+      .#{$color_name}-text {
+        color: $color_value !important;
+      }
+    }
+    @else if $color_name != "shades" {
+      .#{$color_name}.#{$color_type} {
+        background-color: $color_value !important;
+      }
+      .#{$color_name}-text.text-#{$color_type} {
+        color: $color_value !important;
+      }
+    }
+  }
+}
+
+// Shade classes
+@each $color, $color_value in $shades {
+  .#{$color} {
+    background-color: $color_value !important;
+  }
+  .#{$color}-text {
+    color: $color_value !important;
+  }
+}
+
+// usage: color("name_of_color", "type_of_color")
+// to avoid to repeating map-get($colors, ...)
+
+@function color($color, $type) {
+  @if map-has-key($colors, $color) {
+    $curr_color: map-get($colors, $color);
+    @if map-has-key($curr_color, $type) {
+      @return map-get($curr_color, $type);
+    }
+  }
+  @warn "Unknown `#{$color}` - `#{$type}` in $colors.";
+  @return null;
+}

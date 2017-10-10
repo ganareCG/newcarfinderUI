@@ -1,63 +1,14 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+.header-wrapper {
+    text-align: center;
+    padding: 15px;
 }
-
-html {
-	height: 100%;
+.content-wrapper {
+    text-align: center;
+    padding: 0px 15px 15px;
 }
-
-body {
-	font-family: 'Lato', sans-serif, Arial;
-	font-size: 14px;
-	color:#4d5057;
-	background: #fff;
-	font-style: normal;
-}
-
-a {
-	color: #0288d1;
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: none;
-}
-
-ul {
-	list-style: none;
-}
-
-button {
-	border: none;
-	outline: none;
-	background: none;
-}
-
-.btn {
-	display: inline-block;
-	color: #82888b;
-	padding: 5px 15px;
-	font-size: 14px;
-	line-height: 1.42857143;
-	text-align: center;
-	white-space: nowrap;
-	border: 1px solid #82888b;
-	border-radius: 20px;
-	outline: none;
-	text-decoration: none;
-	vertical-align: middle;
-	cursor: pointer;
-	user-select: none;
-	background-image: none;
-}
-
-.btn-active {
-	color: #00afa0;
-	border-color: #00afa0;
-}
-
+/********************
+OLD
+********************/
 .target-link {
 	color: #00afa0;
 	padding: 7px 14px;

@@ -1,5 +1,6 @@
 let webpack = require('webpack')
 let path = require('path')
+const ExtractTextPlugin = require("extract-text-webpack-plugin")
 
 let SOURCE_DIR = path.resolve(__dirname, 'src')
 let BUILD_DIR = path.resolve(__dirname, 'build')
@@ -20,20 +21,17 @@ let config = {
 	},
 
 	module: {
-		loaders: [
+		rules: [
 			{
 				test: /\.jsx?/,
 				include: SOURCE_DIR,
 				loader: 'babel-loader'
+			},
+			{
+				test: /\.(sass|scss)$/,
+				loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])				
 			}
 		]
-	},
-
-	devServer: {
-		contentBase: path.join(__dirname),
-		compress: true,
-		port: 9000,
-		open: true
 	},
 
 	resolve: {
@@ -49,6 +47,10 @@ let config = {
 		new webpack.optimize.CommonsChunkPlugin({
 			name: 'vendor',
 			minChunks: 2
+		}),
+		new ExtractTextPlugin({ // define where to save the file
+			filename: 'css/[name].bundle.css',
+			allChunks: true,
 		})
 	]
 }

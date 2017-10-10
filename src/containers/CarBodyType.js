@@ -64,13 +64,12 @@ class CarBodyType extends React.Component {
 		return (
 			<div className="form-content">
 				{ isFetching ? <div>Loading...</div> : '' }
-
-				<p className="form-heading">Recommendations in your budget</p>
+				<h3 className="subtitle">Recommendations in your budget</h3>
 				<ul className="content-list list__recommend-body-type">
 					{ recommendationListElements }
 				</ul>
 
-				<p className="form-heading">Other body type</p>
+				<h3 className="subtitle">Other body type</h3>
 				<ul className="content-list list__other-body-type">
 					{ bodyListElements }
 				</ul>

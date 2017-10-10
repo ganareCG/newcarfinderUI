@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i');
+
+$lato: 'Lato', sans-serif;
+$font-size: 1em;
+$base-font-family: $lato;
+$base-font-size: $font-size;
+$base-color: color(carwale-grey, base);
+
+a {
+  text-decoration: none;
+  color: $link-color;
+  font-size: 0.9375rem;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+html{
+  line-height: 1.5;
+  font-family: $lato;
+  font-weight: normal;
+  color: $base-color;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	line-height: 1.1;
+}
+// Header Styles
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+h1 { font-size: $h1-fontsize; line-height: 110%; margin: 0px 0 30px 0;}
+h2 { font-size: $h2-fontsize; line-height: 110%; margin: 0px 0 30px 0;}
+h3 { font-size: $h3-fontsize; line-height: 110%; margin: 0px 0 30px 0;}
+h4 { font-size: $h4-fontsize; line-height: 110%; margin: 0px 0 30px 0;}
+h5 { font-size: $h5-fontsize; line-height: 110%; margin: 0px 0 30px 0;}
+
+// Text Styles
+em { font-style: italic; }
+strong { font-weight: 600; }
+small { font-size: 0.75rem; }
+
+.lato-thin { font-weight: 200; }
+.lato-light { font-weight: 300; }
+.lato-regular { font-weight: 400; }
+.lato-bold { font-weight: 700; }
+.lato-black { font-weight: 900; }

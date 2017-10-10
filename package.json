@@ -1,10 +1,10 @@
 {
-  "name": "find-car",
+  "name": "new-car-finder",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server"
+    "dev": "webpack -d --watch --config ./webpack.config.js"
   },
   "author": "",
   "license": "ISC",
@@ -24,7 +24,11 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "webpack": "^2.2.0",
-    "webpack-dev-server": "^2.2.0"
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.6.0"
   }
 }

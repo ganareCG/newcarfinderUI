@@ -16,9 +16,17 @@ class FindCar extends React.Component {
 	render() {
 		return (
 			<div className="form-content">
-				<p className="form-heading">Select city</p>
-				<p className="city-selection">Mumbai</p>
-				<button type="button" onClick={this.handleCitySubmit} className="btn">Submit location</button>
+				<h3 className="subtitle">Confirm your City</h3>
+				<div className="row">
+					<div className="col s12">
+						<input type="text" name="SelectCity" placeholder="Select Your City" />
+					</div>
+				</div>
+				<div className="row">
+					<div className="col s12">
+						<button type="button" onClick={this.handleCitySubmit} className="cw-btn cw-btn-sm cw-btn-default">Submit location</button>
+					</div>
+				</div>
 			</div>
 		)
 	}
